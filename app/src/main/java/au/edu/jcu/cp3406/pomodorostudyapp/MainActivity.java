@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
     private long studyTimeLeftInMilliseconds; // Stores milliseconds of user inputted time.
     private long timeLeftInMilliseconds;
-    private long restTimeLeftInMilliseconds = 600000;
+    private long restTimeLeftInMilliseconds = 300000;
     private boolean isRunning;
 
     private final long countDownInterval = 1000; // Interval used to demonstrate the rate of each second.
