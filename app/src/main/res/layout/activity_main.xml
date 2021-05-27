@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="388dp"
+            android:layout_height="630dp">
+
+            <Button
+                android:id="@+id/reset_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/reset_time"
+                android:textColor="@android:color/white"
+                app:backgroundTint="@android:color/holo_blue_dark" />
+        </TableRow>
+
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/edit_text_user_input"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:autofillHints="@string/minutes"
+                android:hint="@string/minutes"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/set_time_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/set_time"
+                android:textColor="@android:color/white"
+                app:backgroundTint="@android:color/holo_blue_dark" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="388dp"
+            android:layout_height="630dp">
+
+            <TextView
+                android:id="@+id/countdown_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="@string/_00_00"
+                android:textAlignment="center"
+                android:textSize="60sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/countdown_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/start_study_time"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                android:visibility="gone"
+                app:backgroundTint="@android:color/holo_blue_dark" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/settings_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="settingsClicked"
+                android:text="@string/settings"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                app:backgroundTint="@android:color/holo_blue_dark" />
+        </TableRow>
+    </TableLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
